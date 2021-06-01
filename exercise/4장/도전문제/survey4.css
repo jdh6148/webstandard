@@ -1,0 +1,31 @@
+@charset "utf-8";
+body{
+  background-color: aliceblue;
+}
+
+header p{
+margin: 10px;
+}
+
+header>h2{
+  color: brown;
+  text-align: center;
+}
+
+form{
+  background-color: pink;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+span{
+  color: blue;
+  font-size: 1.5em;
+}
+
+footer{
+  
+  background-color: orange;
+  border-radius: 10px;
+
+}

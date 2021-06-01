@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="survey4.css" type="text/css" rel="stylesheet" >
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h2>설문지</h2>
+    <p>소프트웨어 기술 .....</p>
+    <hr>
+  </header>
+  <main>
+    <form action="http://www.com.kh/경로/서버프로그램" method="POST">
+      <p>
+        <span>학년</span>
+        <label><input type="radio" name="grade" value="1" checked> 1학년</label>
+        <label><input type="radio" name="grade" value="2"> 2학년</label>
+        <label><input type="radio" name="grade" value="3"> 3학년</label>
+        <label><input type="radio" name="grade" value="4"> 4학년<br></label>
+        
+      </p>
+      <p>
+        <span>성별</span>
+        <label><input type="radio" name="gender" value="male"> 남</label>
+        <label><input type="radio" name="gender" value="female"> 여</label>
+      </p>
+      <p>
+        <span>관심분야</span>
+        <select name="interest">
+          <option value="1">모</option>
+          <option value="2">바</option>
+          <option value="3">일</option>
+        </select>
+      </p>
+      <p>
+        <span>진로</span>
+        <label><input type="checkbox" name="dev" value="1">개발</label>
+        <label><input type="checkbox" name="plan" value="2">기획</label>
+        <label><input type="checkbox" name="busi" value="3">영업</label>
+        <label><input type="checkbox" name="startup" value="4">창업</label>
+      </p>
+      <p>
+        <span>남기고 싶은말</span>
+        
+        <textarea  name="message" cols="100" rows="20" placeholder="글을 남겨주세요"></textarea>
+      </p>
+
+    </form>
+  </main>
+  <footer>Copyright 2017 by Kitae</footer>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+body{
+  background-color: aliceblue;
+}
+
+header{
+  border-bottom: 1px solid;
+  font-family : "휴먼편지체"
+}
+
+header>h1{
+  color: brown;
+  text-align: center;
+}
+
+.navigation>h2{
+  text-shadow: 3px 3px 5px skyblue;
+  color: blue;
+}
+
+ul{
+  border: 1px solid;
+}
+
+p{
+  font-family : "휴먼편지체";
+  font-size: 1em;
+  text-indent: 1em;
+}
+nav ul{
+  border-style: dotted;
+  border-width: 1px;
+}
+h2 a{
+  text-shadow: 3px 3px 5px blue;
+  text-decoration: none;
+}
+
+
+
+#footer{
+  background-color: orange;
+  border-radius: 10px;
+  font-family : "휴먼편지체"
+}
+
+
+
+
