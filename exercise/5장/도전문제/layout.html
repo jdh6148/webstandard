@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    outline: red;
+  }
+  html,body{
+    height: 100vh; ;margin: 0;
+    padding: 0; width: 100vw;
+  }
+  header{
+    background-color: yellow;
+    height: 20%;
+    /*2번방법 height:20vh*/
+  }
+  nav{
+    background-color: orange;
+    width: 15vw;
+    height: 65vh;
+    float: left;
+  }
+  section{
+    background-color: skyblue;
+    width: 85vw;
+    height: 65vh;
+    float:left;
+  }
+  footer{
+    background-color: violet;
+    height: 15vh;
+  }
+  .clearfix{
+    clear: both;
+  }
+</style>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <section>section</section>
+  <footer class="clearfix">footer</footer>
+</body>
+</html>

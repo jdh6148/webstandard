@@ -1,0 +1,31 @@
+    *{
+      outline: red;
+    }
+    html,body{
+      height: 100vh; ;margin: 0;
+      padding: 0; width: 100vw;
+    }
+    header{
+      background-color: yellow;
+      height: 20%;
+      /*2번방법 height:20vh*/
+    }
+    nav{
+      background-color: orange;
+      width: 15vw;
+      height: 65vh;
+      float: left;
+    }
+    section{
+      background-color: skyblue;
+      width: 85vw;
+      height: 65vh;
+      float:left;
+    }
+    footer{
+      background-color: violet;
+      height: 15vh;
+    }
+    .clearfix{
+      clear: both;
+    }
