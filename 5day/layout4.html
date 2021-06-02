@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+      color: #999;
+      text-transform: uppercase;
+    }
+
+    .wrap {
+      width: 600px;
+      /*중앙으로 배치*/
+      margin: 0 auto;
+    }
+
+    /*박스 높이 동일*/
+    .wrap .box {
+      height: 150px;
+      text-align: center;
+      /*높이와 line-height를 같게 주면 중앙에 위치함*/
+      line-height: 150px;
+    }
+
+
+    .wrap .box1,
+    .wrap .box4 {
+      background-color: aqua
+    }
+
+    .wrap .box1 {
+      margin: 10px 0;
+    }
+
+    .wrap .box2 {
+      background-color: yellow;
+      width: 150px;
+      float: left;
+    }
+
+    /* : -> 가상속성 */
+    /* :: -> 가상요소 (element: 시작태그~종료태그까지) */
+    .clearfix::after {
+      content: "[안내]위 배너를 클릭하면 새창에서 해당 이벤트 페이지로 연결됩니다.";
+      display: block;
+      clear: both;
+    }
+
+    .wrap .box3 {
+      background-color: white;
+      width: 150px;
+      float: left;
+    }
+
+    .wrap .box4 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="box box1">box1</div>
+    <!-- 박스2,3 동시에 다루기위해 한번 더 div로 묶음 -->
+    <div class="box23 clearfix">
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+    </div>
+    <div class="box box4">box4</div>
+  </div>
+</body>
+
+</html>

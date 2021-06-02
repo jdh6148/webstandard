@@ -1,0 +1,53 @@
+<html lang="en">
+  <!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul>li{
+      position: relative;
+      cursor: help;
+      
+    }
+    /* content 다음에 들어감 
+    ul>li::after{
+      content:"$"
+    }
+    */
+    /* content 전에 들어감
+    ul>li::before{
+      content:"us"
+    }
+    */
+    ul>li:hover::after{
+      /* attr() 현재 속성 */
+      content: attr(data-tooltip);
+      background-color: yellow;
+      position: absolute;
+      left:30px; top: -1em;
+      border:1px solid #aaa;
+      border-radius: 10px;
+      border-bottom-left-radius: 0;
+      color: #000;
+      font-size: 0.5em;
+      transition:0.5s;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- <ul>
+    <li>1,000</li>
+    <li>2,000</li>
+    <li>3,000</li>
+  </ul> -->
+  <ul>
+    <!-- -로 속성추가 -->
+    <li data-tooltip="툴팁도움말1">menu1</li>
+    <li data-tooltip="툴팁도움말2">menu2</li>
+    <li data-tooltip="툴팁도움말3">menu3</li>
+  </ul>
+</body>
+</html>
