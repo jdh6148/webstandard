@@ -1,0 +1,109 @@
+@charset "utf-8";
+html, body{
+  height: 100%;
+  margin: 0%;
+  
+}
+.box1{
+  background-color: blueviolet;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.Uppermost_Menu{
+  width: 70%;
+  margin: 0 auto;
+  background-color: plum;
+  height: 100%;
+}
+
+.box2{
+  height: 100px;
+  background-color: purple;
+  line-height: 100px;
+  text-align: center;
+}
+.Header{
+  height: 100%;
+  background-color: rebeccapurple;
+  width: 70%; margin: 0 auto;
+}
+
+.box3{
+  background-color: violet;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.Nav{
+  width: 70%;
+  margin: 0 auto;
+  background-color: thistle;
+  height: 50px;
+}
+
+.box4{
+  height: 250px;
+  background-color: lightgrey;
+  text-align: center;
+  line-height: 250px;
+}
+
+.w{
+  width: 70%;
+  height: 100%;
+  border: 5px solid black;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+.Content{
+  height: 100%;
+  width: 60%;
+  background-color: lightslategray;
+  float: left;
+}
+.Sidebanner{
+  height: 100%;
+  float: left;
+  width: 20%;
+  background-color: lightsteelblue;
+}
+.Sidemenu{
+  height: 100%;
+  float: left;
+  width: 20%;
+  background-color: lightseagreen;
+}
+
+.box5{
+  background-color: lightcoral;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.Footer_Menu{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: lightpink;
+}
+
+.box6{
+  background-color: lavenderblush;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.Footer{
+  width: 70%;
+  margin: 0 auto;
+  background-color: lavender;
+}
+
+.clearfix::after{
+  clear: both;
+}
