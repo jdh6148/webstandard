@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
+@charset "utf-8";
+
     /* *{outline:1px solid red;} */
     body{margin:0;}
     /* 공통 */
@@ -29,6 +23,36 @@
       background-color: greenyellow;
       width: 100%;
     }
+    .uppermost .container-upm *{
+      /* outline:1px solid red; */
+    }
+    .uppermost .container-upm .upm-menu li{
+      float:left;
+      padding: 0px 5px;
+    }
+    .uppermost .container-upm .upm-menu li:nth-child(2){
+      width: 60px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+    }
+    .uppermost .container-upm .upm-menu li:nth-child(3){
+
+    }
+    .uppermost .container-upm .upm-menu li:nth-child(4){
+      width: 100px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+    }
+    .uppermost .container-upm .upm-menu li:nth-last-child(1){
+      text-align: right;
+      
+    }
+
+    /*??????????*/
+    .upm-menu input{
+      vertical-align: 50%;
+    }
+    
     /* 헤더 */
     .header{
       background-color: aqua; height: 200px;
@@ -39,13 +63,15 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-
+      
       position:relative;
+      font-family: 'Nanum Pen Script', cursive;
+      font-weight: 400;
     }
 
     .header .container-h::after{
       content: "행복한 수요일!";
-      font-size: 3rem;
+      font-size: 4rem;
       position:absolute;
       left:100px;
       top:30px;
@@ -53,23 +79,36 @@
       text-shadow: 10px 10px #333;
     }
     .header .container-h:hover:after{
-      font-size: 4rem;
+      font-size: 5rem;
       transform: rotate(-10deg);
     }
 
     /* 메뉴 */
     .nav {
       background-color: aquamarine; height:30px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
     .nav ul li {
       float:left; padding:3px 10px;
+      position: relative;
+      letter-spacing: 0.3em;
     }
+
     .nav ul li:nth-child(1){
       padding-left: 0;
     }
     .nav ul li:hover a{
-      text-decoration: underline;
-      font-weight: bold;
+      
+    }
+    .nav ul li:hover::before{
+      content: " ";
+      display: block;
+      position: absolute;
+      left:0; top:1.5rem;
+      width: 100%; height: 3px;
+      background-color: #666;
+      transition: all 1s;
     }
 
     /* 메인 */
@@ -97,11 +136,21 @@
       font-weight: bold;
     }
     .content form ul li{
-      padding: 5px 0; 
+      padding: 5px 0;
     }
     .content form ul li input{
       box-sizing: border-box;
-      width:100%;
+      vertical-align: top;
+      width:90%;
+    }
+    .content form ul li:nth-child(2){
+      color:orange;
+    }
+    .content form ul li:nth-child(4){
+      color:greenyellow;
+    }
+    .content form ul li span{
+      vertical-align: top;
     }
     .content form ul li button{
       width:100%;
@@ -124,58 +173,31 @@
     .clearfix::after{
       content: " "; display: block; clear:both;
     }
-  </style>
-</head>
-<body>
-  <div class="uppermost">
-    <div class="container container-upm">Log-in | Event Sale</div>
-  </div>  
-  <div class="header">
-    <div class="container container-h">
-      <!-- <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" alt=""> -->
-    </div>
-  </div>
-  <div class="nav">
-    <div class="container container-n">
-      <ul class="clearfix">
-        <li><a href="#">menu1</a></li>
-        <li><a href="#">menu2</a></li>
-        <li><a href="#">menu3</a></li>
-        <li><a href="#">menu4</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="main">
-    <div class="container clearfix">
-      <div class="sidebar">
-        <ol>
-          <li>항목1</li>
-          <li>항목2</li>
-          <li>항목3</li>
-          <li>항목4</li>
-          <li>항목5</li>
-        </ol>
-      </div>
-      <div class="content">
-        <form>
-          <p>로 그 인</p>
-          <ul>
-            <li><label for="user_id">아이디</label></li>
-            <li><input type="text" id="user_id"></li>
-            <li><label for="user_pw">비밀번호</label></li>
-            <li><input type="password" id="user_pw"></li>
-            <li><button>로그인</button></li>
-          </ul>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container container-f">
-      <div class="copyright">
-        Copyright(c) 울산KH정보교육원 All Right Reserved
-      </div>
-    </div>
-  </div>
-</body>
-</html> 
+
+    /*아이콘 스타일*/
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+    
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+    
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+ 
